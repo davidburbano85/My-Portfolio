@@ -5,9 +5,10 @@
             height: flex;
             border-radius: 15px;
             display: flex;
-            background-color: #0E185F;
+            /* background-color: #0E185F; */
+            background-color: red;
             margin: flex;
-            box-sizing: border-box;
+            box-sizing: 100%;
             
 
 
