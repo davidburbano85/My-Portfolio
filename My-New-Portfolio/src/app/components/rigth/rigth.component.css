@@ -1,0 +1,18 @@
+.rigth
+    {
+        display: flex;
+        margin-top: 35px;
+        width: 33.3%;
+        height: 390px;
+        background-color: #00FFDD;
+        border-radius: 10px;
+
+        
+    }
+    .text
+        {
+            padding-top: 5px;
+            color:  #0E185F;
+           font-size: xx-large;
+           font-family: 'Mochiy Pop One', sans-serif;
+        }
