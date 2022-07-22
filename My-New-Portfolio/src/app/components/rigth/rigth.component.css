@@ -1,18 +1,19 @@
 .rigth
     {
-        display: flex;
+        /* display:grid; */
         margin-top: 35px;
         width: 33.3%;
         height: 390px;
-        background-color: #00FFDD;
+        background-color: #395B64;
         border-radius: 10px;
+        margin: 5px;
 
         
     }
     .text
         {
             padding-top: 5px;
-            color:  #0E185F;
+            color: #0080FF;
            font-size: xx-large;
            font-family: 'Mochiy Pop One', sans-serif;
         }

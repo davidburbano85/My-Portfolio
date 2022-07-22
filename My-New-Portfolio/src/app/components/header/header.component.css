@@ -1,14 +1,13 @@
-    .header
+    .headerr
         {
+            margin: 5px;
             padding: 0;
             width: flex;
             height: 450px;
             border-radius: 15px;
             display: flex;
-            background-color:  #2FA4FF;
+            background-color:  #2FA4FF;            
             
-            margin: flex;
-            box-sizing: 100%;
             
 
 
@@ -29,7 +28,7 @@
             }
           .text
             {
-                color: #0E185F;
+                color: #0080FF;
                 height: min-content;
                 left: 10em;
                 font-size: 37px;
@@ -37,10 +36,46 @@
                 margin-top: 25%;
                 padding: 0;
                 /* background-color: aliceblue; */
-                padding-left: 16%;
+                padding-left: 12%;
                 
              
             }
+          .button
+            {
+              margin-top: 5px;
+              margin-right: 5px;          
+              background-color: none;
+              height: max-content;
+              width: max-content;
+              border-radius: 15px;
+              border: none;
+            }
+
+            .iconSun
+              {
+                
+                margin-top: 5px;                
+                height: 15px;
+                width: 20px;
+                opacity: .4;     
+                margin-right: 20px;               
+                border-radius: 5px;
+                
+              }
+
+              .button .iconMoon
+              {
+                
+                margin-top: -18.5px;
+                display:flex;
+                height: 15px;
+                width: 20px;
+                opacity: .4;
+                border-radius: 5px;                
+                margin-left: 28px;
+                
+
+              }
 
     /* body.dark
     {
