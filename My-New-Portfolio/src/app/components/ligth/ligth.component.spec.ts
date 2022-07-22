@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StyleLighComponent } from './style-ligh.component';
+import { LigthComponent } from './ligth.component';
 
-describe('StyleLighComponent', () => {
-  let component: StyleLighComponent;
-  let fixture: ComponentFixture<StyleLighComponent>;
+describe('LigthComponent', () => {
+  let component: LigthComponent;
+  let fixture: ComponentFixture<LigthComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StyleLighComponent ]
+      declarations: [ LigthComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StyleLighComponent);
+    fixture = TestBed.createComponent(LigthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
