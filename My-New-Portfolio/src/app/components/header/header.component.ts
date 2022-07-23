@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, OnInit, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
@@ -8,10 +10,22 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class HeaderComponent implements OnInit {
+  clases: string[]=[] ;
+  flag=true;
+  
+  constructor() 
+     { 
+      this.clases= 
+      [
+        "day", 
+        "night",
+      ]
+    }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+  changeTheme()
+    {
+        this.flag= !this.flag;
+    }
 
 }

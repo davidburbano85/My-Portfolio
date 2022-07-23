@@ -8,19 +8,15 @@ import { Style } from '../../models/style';//src/app/models/style';
 })
 
 export class LigthComponent implements OnInit {
-      style: Style[] = [];
+     
   constructor() { }
 
   ngOnInit(): void 
   {
-    this.style =
-    [
-      {
-        primaryColor: "#2FA4FF",
-       texPrimary: "#0080FF",
-       defaultTextSize: "xx-large",
-      }
-    ]
+    
+   
+
+   
   }
 
 }

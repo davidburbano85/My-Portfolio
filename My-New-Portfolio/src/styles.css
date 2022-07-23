@@ -3,16 +3,18 @@
 
 body
 {
-    background-color:rgb(42, 34, 34);
+    /* background-color:rgb(42, 34, 34); */
     margin: 0%;
 }
-
-.color
+/* 
+.sun
 {
+  background-color: turquoise;
+
     
-    color: red;
 }
-.color.size
+.moon
     {
-        font-size: xx-large;
-    }
+       background-color: gray;
+
+    } */

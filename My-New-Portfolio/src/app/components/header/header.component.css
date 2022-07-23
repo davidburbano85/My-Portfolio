@@ -1,18 +1,19 @@
-    .headerr
+   
+
+     .headerr
         {
             margin: 5px;
             padding: 0;
             width: flex;
             height: 450px;
             border-radius: 15px;
-            display: flex;
-            background-color:  #2FA4FF;            
+            display: flex;                   
             
             
 
 
         }
-          .presentation
+ .presentation
             {
                 height: min-content;                 
                 color:  #0E185F;                
@@ -20,13 +21,13 @@
                 font-family: 'Edu NSW ACT Foundation', cursive;
                 border: 0;
                 margin-top: 15%;
-                /* background-color: antiquewhite; */
+                
                 padding-left: 05px;
                 
                 
                 
             }
-          .text
+  .texto
             {
                 color: #0080FF;
                 height: min-content;
@@ -35,12 +36,12 @@
                 font-family: 'Mochiy Pop One', sans-serif;
                 margin-top: 25%;
                 padding: 0;
-                /* background-color: aliceblue; */
+                
                 padding-left: 12%;
                 
              
             }
-          .button
+.button
             {
               margin-top: 5px;
               margin-right: 5px;          
@@ -51,7 +52,7 @@
               border: none;
             }
 
-            .iconSun
+.iconSun
               {
                 
                 margin-top: 5px;                
@@ -63,7 +64,7 @@
                 
               }
 
-              .button .iconMoon
+.button .iconMoon
               {
                 
                 margin-top: -18.5px;
@@ -77,9 +78,13 @@
 
               }
 
-    /* body.dark
-    {
-      color:red;
-    }
-    */
+   
+            .day
+              {
+                background-color: red;
+              }
 
+          .night
+            {
+              background-color: blue;
+            }

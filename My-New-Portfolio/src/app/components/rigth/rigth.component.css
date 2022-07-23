@@ -1,6 +1,6 @@
-.rigth
+ /* .rigth
     {
-        /* display:grid; */
+        
         margin-top: 35px;
         width: 33.3%;
         height: 390px;
@@ -13,7 +13,14 @@
     .text
         {
             padding-top: 5px;
-            color: #0080FF;
+            color: red;
            font-size: xx-large;
            font-family: 'Mochiy Pop One', sans-serif;
-        }
+        }  */
+
+        .rigth
+            {
+               
+               height: 80px;
+              width: 50px;
+            }

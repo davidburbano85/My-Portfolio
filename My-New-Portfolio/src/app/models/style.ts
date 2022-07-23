@@ -1,6 +1,8 @@
+import { NgClass } from '@angular/common';
+
 export class Style
     {
-        primaryColor:string="";
-        texPrimary: string="";
-        defaultTextSize:string="";
+        sun:string="";
+       moon: string="";
+       
     }
