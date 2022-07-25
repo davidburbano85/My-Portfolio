@@ -1,4 +1,5 @@
-import { NgModule, Component } from '@angular/core';
+
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 
@@ -10,7 +11,9 @@ import { RigthComponent } from './components/rigth/rigth.component';
 import { LigthComponent } from './components/ligth/ligth.component';
 import { StyleTComponent } from './components/style-t/style-t.component';
 
-
+import { ComponentModule } from './components/component.module';
+// servicios
+import { ComponentService} from './component.service';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,16 @@ import { StyleTComponent } from './components/style-t/style-t.component';
     LigthComponent, 
     StyleTComponent, 
     
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentModule
   ],
-  providers: [],
+  providers: [
+    ComponentService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

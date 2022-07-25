@@ -20,7 +20,8 @@
 
         .rigth
             {
-               
+                background-color: red;
+               background: fixed;
                height: 80px;
               width: 50px;
             }

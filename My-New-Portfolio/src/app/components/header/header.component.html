@@ -1,29 +1,11 @@
-  
-<div [ngClass]="{'day': flag, 'night': !flag}" class="headerr" >
-      
-        <div class="color">hola</div>
-        <div class="presentation" >
-                Hello, Iam David Burbano 
-        </div> 
-        <div class="text" >
-                <p >
-                        <br>And this is my portfolio
-                </p>
-        </div>  
-        <button (click)="changeTheme()" class="button"> 
-                         
-                <span><img class="iconSun" src="data:image/png;base64,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" alt=""></span>
-                
-                <span><img class="iconMoon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_la-SnaPG_vBlD7vlrRc0J3hVCX_5_41LA&usqp=CAU" alt=""></span>    
-        </button>
+<div>
+   <div class="medida">
+      <span class="caja" *ngIf="oscuro"> holitas</span>
+
+      <span class="cajas" *ngIf="!oscuro"></span>
+
+   </div>
+
+   <button #modoOscuro (click)="estilo()">modo oscuro</button>
 </div>
-
-<div [ngClass]="{'day': flag, 'night': !flag}"  *ngFor="let clase of clases">
-        <app-rigth [clase]="clase"></app-rigth>
-</div>
-
-
-
-<!-- *ngFor="let clase of clases"
-  <app-rigth [clase]= "clases" ></app-rigth> -->
-  
+<!-- <app-rigth recibirColor=estilo()></app-rigth> -->

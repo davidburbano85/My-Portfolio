@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { HeaderComponent } from './../header/header.component';
+import { Component, OnInit,  Renderer2, ViewChild,  ElementRef,} from '@angular/core';
 
 @Component({
   selector: 'app-rigth',
@@ -6,11 +7,27 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./rigth.component.css'],
 })
 export class RigthComponent implements OnInit {
-  @Input()  clase: any; 
+  
+// @ViewChild("dark") color = ElementRef;
 
-  constructor() { }
+  oscuro: boolean = true;
+  constructor(private recibirClic: Renderer2) { }
+
 
   ngOnInit(): void {
   }
 
+  darknnes(): void {
+    this.recibirClic.listen("HeaderComponent", "modoOscuro", () => {
+      console.log("click");
+     if (this.oscuro) {
+        this.oscuro = false
+      } else {
+        this.oscuro= true
+      }
+      
+    });
+  }
+
 }
+// target: any, eventName: string, callback: (event: any) => boolean | 

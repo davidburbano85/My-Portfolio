@@ -1,6 +1,6 @@
 import { NgClass } from '@angular/common';
-import { Component, OnInit, Output } from '@angular/core';
-
+import { Component, OnInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
+import { RigthComponent } from '../rigth/rigth.component';
 
 @Component({
   selector: 'app-header',
@@ -10,22 +10,28 @@ import { Component, OnInit, Output } from '@angular/core';
 
 
 export class HeaderComponent implements OnInit {
-  clases: string[]=[] ;
-  flag=true;
-  
-  constructor() 
-     { 
-      this.clases= 
-      [
-        "day", 
-        "night",
-      ]
+
+  @ViewChild("modoOscuro") negro = ElementRef
+
+  oscuro: boolean = true;
+  constructor(private render: Renderer2) { }
+
+  ngOnInit(): void { }
+
+  estilo() {
+    if (this.oscuro) {
+      this.oscuro = false
+    }else {
+      this.oscuro = true
     }
 
-  ngOnInit(): void {}
-  changeTheme()
-    {
-        this.flag= !this.flag;
-    }
+    this.oscuro2();
 
+  }
+
+  oscuro2(): void {
+    const darknnes = this.dark.nativeElement;
+    console.log(darknnes)
+
+  }
 }

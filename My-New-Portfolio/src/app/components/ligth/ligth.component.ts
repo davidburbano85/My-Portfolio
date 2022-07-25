@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Style } from '../../models/style';//src/app/models/style';
+
 
 @Component({
   selector: 'app-ligth',

@@ -18,3 +18,27 @@ body
        background-color: gray;
 
     } */
+       
+
+    .caja
+    {
+        margin: 5px;
+        padding: 0;
+        width: flex;
+        height: 450px;
+        border-radius: 15px;
+        
+        display: flex;   
+        background-color: rgb(132, 91, 91);                
+    }
+
+    .cajas
+    {
+        margin: 5px;
+        padding: 0;
+        width: flex;
+        height: 450px;
+        border-radius: 15px;
+        display: flex;                   
+        background-color: rgb(104, 104, 161);                
+    }

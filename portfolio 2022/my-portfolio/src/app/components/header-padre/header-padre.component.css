@@ -1,0 +1,69 @@
+.header{
+    margin-top: 0px;
+}
+
+
+.backDark {
+    margin-top: 0px;
+    width: flex;
+    height: 450px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.backligth {
+    margin-top: 0px;
+    width: flex;
+    height: 450px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+
+
+
+.btns {
+    color: var(--ligthtext);
+    background-color: var(--ligthcolor);
+    width: min-content;
+    margin-left: 96%;
+    
+    border-radius: none;
+    border: none;
+
+}
+
+.btn {
+    color: var( --ligthtext);
+    background-color:var(--ligthcolor);
+    width: min-content;
+    margin-left: 96%;
+    
+    border-radius: none;
+    border: none;
+  
+}
+.clarobtn{
+    background-color: none;
+    
+}
+
+.oscurobtn{
+    background-color:none;
+}
+
+.name{
+    margin-left: 5%;
+    font-size: 60px;
+    background: none;
+    padding-top: 15%;
+}
+
+.am{
+margin-left: 54% ;
+font-size: 52px;
+background: none;
+padding-top: 2%;
+}
