@@ -1,12 +1,18 @@
-.header{
-    margin-top: 0px;
+
+.header
+{
+    
+    margin-top: 5px;
 }
+
 
 
 .backDark {
     margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     width: flex;
-    height: 450px;
+    height: 200px;
     padding: 0px;
     border: 0px;
     border-radius: 15px;
@@ -14,56 +20,84 @@
 
 .backligth {
     margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     width: flex;
-    height: 450px;
+    height: 200px;
     padding: 0px;
     border: 0px;
     border-radius: 15px;
 }
 
+.backgroundBoton{
+    position: relative;    
+    margin-top: 0px;
+    display: flex;   
+    width: max-content;
+    align-items: center;
+    height: min-content;
+    padding: 2px;
+    border-radius: 5px;  
+    cursor: pointer;
+    overflow: hidden;
+    transition: 01s;
+    text-decoration: none;       
+} 
 
-
-
-.btns {
-    color: var(--ligthtext);
-    background-color: var(--ligthcolor);
-    width: min-content;
-    margin-left: 96%;
-    
-    border-radius: none;
-    border: none;
-
+:hover.backgroundBoton {
+    background: #0080FF;
+    opacity: 0.7;
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
 }
 
-.btn {
-    color: var( --ligthtext);
-    background-color:var(--ligthcolor);
-    width: min-content;
-    margin-left: 96%;
-    
-    border-radius: none;
-    border: none;
-  
-}
-.clarobtn{
-    background-color: none;
-    
+.btn1{
+    align-items: center;
+    display: flex;   
+    border: 3px;    
+    height: 8px;
+    background-color: rgb(16, 238, 223); 
+    padding: 1px; 
+    font-size: 6px;
+    color: #0080FF;
+    border-radius: 2px;
+    position: relative;    
 }
 
-.oscurobtn{
-    background-color:none;
+:hover.btn1{
+    background-color: rgb(24, 24, 32);
 }
 
+.btns{
+    align-items: center;
+    display: flex;    
+    border: 1px;
+    height: 8px;
+    background-color: rgb(24, 24, 32); 
+    padding-left: 1px; 
+    font-size: 6px;
+    border-radius: 2px;
+    color: #0080FF;
+    width: 15px; 
+}
+
+:hover.btns {
+    background-color: rgb(158, 244, 238);
+}  
 .name{
+    align-items: center;
     margin-left: 5%;
-    font-size: 60px;
+    font-size: 40px;
     background: none;
     padding-top: 15%;
+    font-family: 'Pangolin', cursive;
 }
 
 .am{
-margin-left: 54% ;
-font-size: 52px;
+align-items: center;
+margin-left: 65% ;
+font-size: 21px;
 background: none;
 padding-top: 2%;
+font-family: 'Pangolin', cursive;
 }

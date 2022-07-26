@@ -9,16 +9,16 @@ import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service
 export class RigthComponent implements OnInit {
 
   oscuro: boolean=false;
+  cambioColor: any;
   constructor(private servicioOscuroService: ServicioOscuroService) { }
 
 
   ngOnInit(): void {
     this.servicioOscuroService.enviarColoresObservable.subscribe(color =>{
-      this.oscuro=color;
-        
-      console.log("este es el componentte rigth"+ color);
+      this.oscuro=color;       
       
     })
   }
+  
   
 }

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-padre.component.css']
 })
 export class HeaderPadreComponent implements OnInit {
-oscuro: boolean=true;
+oscuro: boolean=false;
   constructor(private servicioOscuroService: ServicioOscuroService) { }
 
 

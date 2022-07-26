@@ -14,7 +14,8 @@ import { ColorOscuroDirective } from './color-oscuro.directive';
     ColorOscuroDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

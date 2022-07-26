@@ -4,8 +4,9 @@
     padding: 0;
     
 }
+
 body{
-    background-color:rgb(117, 240, 228);
+    background-color:rgb(16, 73, 99);
 }
 
 :root{
@@ -28,10 +29,14 @@ body{
     background-color: var(--darkcolor) ;
 }
 
-.textClaro{    
+.textClaro{   
+    align-items: center; 
     color:var(--ligthtext);
+    display: flex;
 }
 
 .textOscuro{
+    align-items: center;
+    display: flex;
     color: var(--darktext);
 }

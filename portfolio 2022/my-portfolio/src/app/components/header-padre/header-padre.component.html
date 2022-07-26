@@ -1,21 +1,27 @@
-<div *ngIf="oscuro" class="clarobtn">
-    <button class="btn" (click)="estilo()">modo claro</button>
+<div class="backgroundBoton">
+    <div class="clarobtn" *ngIf="oscuro">
+        <button class="btn1" (click)="estilo()">Ligth</button>
+    </div>
+
+    <div class="oscurobtn" *ngIf="!oscuro">
+        <button class="btns " (click)="estilo()">Dark</button>
+    </div>
 </div>
-<div *ngIf="!oscuro" class="oscurobtn">
-    <button class="btns" (click)="estilo()">modo oscuro</button>
-</div>
+
+
+
 <div class="header">
     <div>
         <div *ngIf="oscuro">
-            <div class="claro backDark">
-                <h1 class="textClaro name"> Hello, Iam David Burbano</h1>
-                <h2 class="textClaro am"> and I developer</h2>
+            <div class="oscuro backDark">
+                <h1 class="textClaro name"> Hello, I am David Burbano</h1>
+                <h2 class="textClaro am"> and I´m developer</h2>
             </div>
         </div>
         <div *ngIf="!oscuro">
-            <div class="oscuro backligth">
-                <h1 class="textOscuro name">Hello, Iam David Burbano</h1>
-                <h2 class="textOscuro am" > and I developer</h2>
+            <div class="claro backligth">
+                <h1 class="textOscuro name">Hello, I am David Burbano</h1>
+                <h2 class="textOscuro am"> and I´m developer</h2>
             </div>
         </div>
     </div>
