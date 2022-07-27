@@ -7,15 +7,20 @@
     border-radius: 15px;
     margin-left: 5px;
     padding-left: 5px;  
+    border-top-right-radius: 10px;
+    transition: 2s;
+
 } 
 
 .rOscuro {
     background-color: rgb(24, 24, 32);
     color: #0080FF;
     font-family: 'Pangolin', cursive;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     margin-left: 5px;
     padding-left: 5px;
+    border-top-right-radius: 10px;
+    transition: 2s;
 }
 
 
@@ -50,6 +55,8 @@
 }
 
 .myLife {
+    display: flex ;
+   justify-content: space-between;    
     background-color: rgb(24, 24, 32);
     margin-left: -5px;
     border-top-right-radius: 10px;
@@ -57,6 +64,7 @@
     padding: 0;
     box-sizing: border-box;
     border-bottom: solid 1px  #0080FF;
+    align-items: baseline;
 }
 
 #title {
@@ -124,6 +132,31 @@
     box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
     transition-delay: 0s;
 }
+.btn3{
+    vertical-align: middle;
+    margin-top: 2px;
+    border: 1px;
+    height: 25px;
+    background-color: rgb(24, 24, 32);
+    padding-top: 1px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #0080FF;
+    width: 36px;
+    transition: 2s;
+    align-items: center center;  
+    border-radius: 25px;
+   
+}
+:hover.btn3 {
+    background: rgb(158, 244, 238);
+    color: rgb(24, 24, 32);
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
+    border-radius: 5px;
+}
+
+
 
 #mainContainer {
     margin-top: 240px;
@@ -156,14 +189,16 @@
     border-bottom: solid 1px black;
 }
 
+
 .myLifeD {
-    background-color: rgb(158, 244, 238);
+    /* background-color: rgb(158, 244, 238); */
     margin-left: -5px;
     border-top-right-radius: 10px;
     width: 200px;
     padding: 0;
     box-sizing: border-box;
     border-bottom: solid 1px   #0080FF;
+    align-items: baseline;
 }
 
 #titleD {
@@ -190,7 +225,7 @@
 }
 
 :hover#menuBtnD {
-    transition: 3s;
+    transition: 4s;
     background-color: black;
 }
 
