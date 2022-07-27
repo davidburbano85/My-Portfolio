@@ -1,42 +1,41 @@
 
 .header
-{
-    
+{    
     margin-top: 5px;
 }
 
 
 
 .backDark {
-    margin-top: 0px;
+    margin-top: 8px;
     margin-left: 5px;
     margin-right: 5px;
     width: flex;
-    height: 200px;
+    height: 400px;
     padding: 0px;
     border: 0px;
     border-radius: 15px;
 }
 
 .backligth {
-    margin-top: 0px;
+    margin-top: 8px;
     margin-left: 5px;
     margin-right: 5px;
     width: flex;
-    height: 200px;
+    height: 400px;
     padding: 0px;
     border: 0px;
     border-radius: 15px;
 }
 
 .backgroundBoton{
-    position: relative;    
+        
     margin-top: 0px;
     display: flex;   
     width: max-content;
     align-items: center;
     height: min-content;
-    padding: 2px;
+    padding: 4px;
     border-radius: 5px;  
     cursor: pointer;
     overflow: hidden;
@@ -52,16 +51,17 @@
 }
 
 .btn1{
+    margin-top: 50x;
     align-items: center;
     display: flex;   
-    border: 3px;    
-    height: 8px;
+    border: 1px;    
+    height: 18px;
     background-color: rgb(16, 238, 223); 
     padding: 1px; 
-    font-size: 6px;
+    font-size: 15px;
     color: #0080FF;
     border-radius: 2px;
-    position: relative;    
+    width: 36px;  
 }
 
 :hover.btn1{
@@ -69,34 +69,36 @@
 }
 
 .btns{
+    margin-top: 5px;
     align-items: center;
     display: flex;    
     border: 1px;
-    height: 8px;
+    height: 18px;
     background-color: rgb(24, 24, 32); 
     padding-left: 1px; 
-    font-size: 6px;
+    font-size: 15px;
     border-radius: 2px;
     color: #0080FF;
-    width: 15px; 
+    width: 36px; 
 }
 
 :hover.btns {
     background-color: rgb(158, 244, 238);
 }  
 .name{
+    
     align-items: center;
     margin-left: 5%;
-    font-size: 40px;
-    background: none;
-    padding-top: 15%;
+    font-size: 80px;
+    background: none ;
+    padding-top: 90px;
     font-family: 'Pangolin', cursive;
 }
 
 .am{
 align-items: center;
-margin-left: 65% ;
-font-size: 21px;
+margin-left: 56% ;
+font-size: 55px;
 background: none;
 padding-top: 2%;
 font-family: 'Pangolin', cursive;
