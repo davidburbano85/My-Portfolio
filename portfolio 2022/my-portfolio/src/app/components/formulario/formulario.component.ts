@@ -1,4 +1,5 @@
 import { ReturnStatement } from '@angular/compiler';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { invalid } from '@angular/compiler/src/render3/view/util';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup,  Validators } from '@angular/forms';
@@ -11,7 +12,7 @@ import { FormBuilder, FormGroup,  Validators } from '@angular/forms';
 export class FormularioComponent implements OnInit {
 title="newForm";
   formLogin!: FormGroup; 
-  
+  agradecimiento:boolean=true;
 
   constructor(private formBuilder: FormBuilder) {//revisar que en app.module.ts este activo en el imports el ReactiveFormsModuleo escribirlo
 
@@ -20,15 +21,19 @@ title="newForm";
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
       email:['', [Validators.required, Validators.email]],
-      password:['', [Validators.required, Validators.minLength(5)]], 
-      check:['',[Validators.requiredTrue]]   });
+      password:['', [Validators.required, Validators.minLength(8)]], 
+      check:['',[Validators.requiredTrue]],
+      nombre:['',[Validators.required, Validators.minLength(4)]],
+      apellido:['',[Validators.required, Validators.minLength(4)]],
+      organizacion:['', [Validators.required, Validators.minLength(4)]], });
   }
   send():any{
     console.log(this.formLogin.value);
-      
- 
+     
   }
-  
+  gracias(){
+    this.agradecimiento=!this.agradecimiento
+  }
 
   }
 

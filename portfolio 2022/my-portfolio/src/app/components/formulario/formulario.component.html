@@ -2,9 +2,35 @@
           ************https://github.com/ngneat/error-tailor************
                ********REVISAR Y ACTUALIZAR EL app.module.ts**** -->
 
-<div>
+<div class="form">
+
+     <div *ngIf="!agradecimiento" class="msjValidar">
+          <h1 class="thanks">I David Burbano and I thank you for singing me.</h1>
+          <button type="menu" class="btnFinAlerta" (click)="gracias()" >
+               accept
+          </button>
+     </div>
 
      <form [formGroup]="formLogin" (submit)="send()" errorTailor>
+          <div>
+               <label for="text">Nombres: </label>
+               <input type="text" id="nombre" formControlName="nombre">
+
+          </div>
+
+          <div>
+               <label for="text">Apellidos: </label>
+               <input type="text" id="Apellidos" formControlName="apellido">
+
+          </div>
+
+          <div>
+               <label for="text">Organizacion: </label>
+               <input type="text" id="organizacion" formControlName="organizacion">
+
+          </div>
+
+
           <div>
                <label for="email">E-mail:</label>
                <input type="text" id="email" formControlName="email">
@@ -12,35 +38,42 @@
 
           <div>
                <label for="password">Password:</label>
-               <input type="pasword" id="password" formControlName="password"
-               [controlErrorsTpl]="msgpasserror">
+               <input type="pasword" id="password" formControlName="password" [controlErrorsTpl]="msgpasserror">
                <!-- este es el # del template -->
           </div>
 
-          <div>
-               <button [disabled]="formLogin.invalid">Send</button>
-          </div>
-
-          <div>
+          <div class="">
                <label for="">Know Terms and Conditions <span> <a href="">Here</a></span></label> <br>
-               <label for="">Accept T & C </label>
+               <label for="" class="box">Accept T & C <input class="box" type="checkbox" name="" id="check"
+                         formControlName="check"></label>
 
-               <input type="checkbox" name="" id="check" formControlName="check">
+
           </div>
+
+          <div>
+               <button [disabled]="formLogin.invalid" id="btn" class="submit" (click)="gracias()"> send
+
+               </button>
+          </div>
+
+
 
      </form>
 
 </div>
 
-<div>
+
+
+<!-- <div>
      valido: {{formLogin.invalid|json}}
-</div>
+</div> -->
 
 
 
 <ng-template let-error let-text="text" #msgpasserror>
      <b>Error:</b>
      <div *ngIf="error?.minlength">
-          <i>No cumples los caracteres minimos, solo se ingreso:{{error?.minlength?.actualLength}} caracteres</i>
+          <i>You do not meet the minimum <br> characters,
+               only entered: {{error?.minlength?.actualLength}} characters. </i>
      </div>
 </ng-template>
