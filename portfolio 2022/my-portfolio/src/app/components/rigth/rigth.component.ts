@@ -1,3 +1,4 @@
+import { transition } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service';
 
@@ -8,6 +9,7 @@ import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service
 })
 export class RigthComponent implements OnInit {
 
+  recoger: boolean=false;
   oscuro: boolean=false;
   cambioColor: any;
   constructor(private servicioOscuroService: ServicioOscuroService) { }
@@ -15,10 +17,16 @@ export class RigthComponent implements OnInit {
 
   ngOnInit(): void {
     this.servicioOscuroService.enviarColoresObservable.subscribe(color =>{
-      this.oscuro=color;       
+      this.oscuro=color;    
+
       
     })
   }
   
+  contraer(){
+    this.recoger=!this.recoger;
+    
+    console.log(this.recoger)
+  }
   
 }

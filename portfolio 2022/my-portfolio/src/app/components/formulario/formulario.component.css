@@ -1,0 +1,13 @@
+label{
+    display: block;    
+}
+
+input.ng-invalid.ng-touched{/* esots ng se los encuentra en consola*/
+border: solid 2px red;
+box-shadow: 0 0 10px  #0095ff, 0 0 10px #ff0000,  0 0 40px #0095ff ,0 0 40px #ff0000, 0 0 80px #ff0000;
+
+}
+input.ng-valid{
+    border: solid 2px rgb(88, 234, 3);
+    box-shadow: 0 0 10px  #131525, 0 0 40px  #131525;
+}

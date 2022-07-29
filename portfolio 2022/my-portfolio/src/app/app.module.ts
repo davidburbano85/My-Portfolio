@@ -5,18 +5,38 @@ import { AppComponent } from './app.component';
 import { HeaderPadreComponent } from './components/header-padre/header-padre.component';
 import { RigthComponent } from './components/rigth/rigth.component';
 import { ColorOscuroDirective } from './color-oscuro.directive';
+import { ValidarFormularioPipe } from './pipes/validar-formulario.pipe';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { FirstBodyComponent } from './components/first-body/first-body.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { ErrorTailorModule } from '@ngneat/error-tailor';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderPadreComponent,
     RigthComponent,
-    ColorOscuroDirective
+    ColorOscuroDirective,
+    ValidarFormularioPipe,
+    FormularioComponent,
+    FirstBodyComponent
   ],
   imports: [
     BrowserModule,
- 
-  ],
+    ReactiveFormsModule,
+    ErrorTailorModule.forRoot({
+      errors: {
+        useValue: {
+          required: 'This field is required',
+          minlength: ({ requiredLength, actualLength }) => 
+                      `Expect ${requiredLength} but got ${actualLength}`,
+          invalidAddress: error => `Address isn't valid`
+        }
+      }
+    })
+   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

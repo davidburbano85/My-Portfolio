@@ -1,14 +1,18 @@
-<div class="bodyExpanded" id="bodyExpanded">
-    <div class="rClaro" *ngIf="!oscuro">
+<div class="rClaro" *ngIf="!oscuro" style="transition:3s;">
 
-        <div class="myLife">
-            <span>My life</span>
-            <button class="btn3" >||| </button>
-        </div>
+    <div class="myLife rClaro">
+        <span>My life</span>
+        <button class="btn3" (click)="contraer()" style="transition:2s ;">||| </button>
+    </div>
+
+
+
+    <div id="contraer" *ngIf="recoger">
+
         <!-- INICIO MENÚ -->
         <div class="sideMenu" id="menuExpanded">AQUI VA UNA FOTO TUYA
 
-            <div id="header">
+            <div id="header" class="">
                 <div id="title"><span>David Burbano Realpe</span></div>
                 <div id="menuBtn">
                     <div class="btns1">
@@ -28,17 +32,16 @@
             </div>
         </div>
 
-
-        <div id="itemSeparator">
-
-        </div>
+        <div id="itemSeparator"> </div>
 
         <div id="mainContainer"> Walcome</div>
 
     </div>
 </div>
 
-<!-- FIN LADO OSCURO -->
+<!-- **************///////////FIN LADO CLARO//////////////*********
+        ******************************************************
+            *********************************************  -->
 
 
 <div class="bodyExpandedD" id="bodyExpandedD">
@@ -46,36 +49,56 @@
 
         <div class="myLife">
             <span>My life</span>
-            <button class="btn3" >||| </button>
+            <button class="btn3" (click)="contraer()">||| </button>
         </div>
 
 
 
-        <!-- INICIO MENÚ -->
-        <div class="sideMenuD" id="menuExpandedD">AQUI VA UNA FOTO TUYA
+        <div id="EXPAND" *ngIf="recoger">
+            <!-- INICIO MENÚ -->
+            <div class="sideMenuD" id="menuExpandedD">AQUI VA UNA FOTO TUYA
 
-            <div id="headerD">
-                <div id="titleD"><span>David Burbano Realpe</span></div>
-                <div id="menuBtnD">
-                    <div class="btns2">
-                        <button class="btn">Link 1</button> <br>
-                    </div>
-                    <div class="btns2">
-                        <button class="btn">Link 2</button> <br>
-                    </div>
-                    <div class="btns2">
-                        <button class="btn">Link 3</button>
-                    </div>
-                    <div class="btns2">
-                        <button class="btn">Link 4</button>
-                    </div>
+                <div id="headerD">
+                    <div id="titleD"><span>David Burbano Realpe</span></div>
+                    <div id="menuBtnD">
+                        <div class="btns2">
+                            <button class="btn">Link 1</button> <br>
+                        </div>
+                        <div class="btns2">
+                            <button class="btn">Link 2</button> <br>
+                        </div>
+                        <div class="btns2">
+                            <button class="btn">Link 3</button>
+                        </div>
+                        <div class="btns2">
+                            <button class="btn">Link 4</button>
+                        </div>
 
+                    </div>
                 </div>
             </div>
+
+            <div id="itemSeparator"> </div>
+            <div id="mainContainerD"> Walcome</div>
+
         </div>
+    </div>
 
 
-        <div id="mainContainerD"> Walcome</div>
 
+</div>
+
+
+
+<!-- *********************FIN EXPANDIR CONTRAER Y **************************            
+                ****************** MODOS OSCUROS Y CLAROS  *********************
+                        **************************************************
+                            ***************************************** -->
+<div id="contraer" *ngIf="!recoger">
+<div class="images">
+  
+        <h1 class="image">********AQUI VA UNA IMAGEN O SERIE DE IMAGENES********</h1>
+        <button></button>
+        <h1>********AQUI VA UNA IMAGEN O SERIE DE IMAGENES********</h1>
     </div>
 </div>
