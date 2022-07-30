@@ -1,8 +1,10 @@
-#aa{
-    /* background-color: red; */
+div{
+    padding-top: 05px;
+    background-color: blue;
     margin-left: 240px;
-    margin-top: 20px;
+    margin-top: 500px;
     height: 200px;
-    display: block;
+    width: min-content;
+    display: inline-table;
 }
 

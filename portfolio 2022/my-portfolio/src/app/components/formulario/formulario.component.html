@@ -2,18 +2,19 @@
           ************https://github.com/ngneat/error-tailor************
                ********REVISAR Y ACTUALIZAR EL app.module.ts**** -->
 
+
 <div class="form">
 
      <div *ngIf="!agradecimiento" class="msjValidar">
-          <h1 class="thanks">I David Burbano and I thank you for singing me.</h1>
-          <button type="menu" class="btnFinAlerta" (click)="gracias()" >
+          <h1 class="thanks">I David Burbano and I thank you {{formLogin.value.nombre}} for singing me.</h1>
+          <button type="menu" class="btnFinAlerta" (click)="gracias()">
                accept
           </button>
      </div>
 
      <form [formGroup]="formLogin" (submit)="send()" errorTailor>
           <div>
-               <label for="text">Nombres: </label>
+                  <label for="text">Nombres: </label>
                <input type="text" id="nombre" formControlName="nombre">
 
           </div>
@@ -64,9 +65,9 @@
 
 
 
-<!-- <div>
-     valido: {{formLogin.invalid|json}}
-</div> -->
+ <!-- <div>
+     valido: {{formLogin}}
+</div>  -->
 
 
 

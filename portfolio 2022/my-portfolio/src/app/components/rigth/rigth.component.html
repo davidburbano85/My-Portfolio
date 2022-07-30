@@ -1,10 +1,12 @@
-<div class="rClaro" *ngIf="!oscuro" style="transition:3s;">
+<div class="rClaro " *ngIf="!oscuro" style="transition:3s;">
 
     <div class="myLife rClaro">
         <span>My life</span>
         <button class="btn3" (click)="contraer()" style="transition:2s ;">||| </button>
     </div>
-
+        <div class="left ">
+            <h1 class="imageLeft">*</h1>
+        </div>
 
 
     <div id="contraer" *ngIf="recoger">
@@ -52,6 +54,9 @@
             <button class="btn3" (click)="contraer()">||| </button>
         </div>
 
+        <div class="left  ">
+            <h1 class="imageLeft">*</h1>
+        </div>
 
 
         <div id="EXPAND" *ngIf="recoger">
@@ -94,11 +99,11 @@
                 ****************** MODOS OSCUROS Y CLAROS  *********************
                         **************************************************
                             ***************************************** -->
-<div id="contraer" *ngIf="!recoger">
+<!-- <div id="contraer" *ngIf="!recoger">
 <div class="images">
   
         <h1 class="image">********AQUI VA UNA IMAGEN O SERIE DE IMAGENES********</h1>
         <button></button>
         <h1>********AQUI VA UNA IMAGEN O SERIE DE IMAGENES********</h1>
     </div>
-</div>
+</div> -->

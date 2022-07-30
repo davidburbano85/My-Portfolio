@@ -12,9 +12,8 @@
     padding-left: 5px;  
     border-top-right-radius: 10px;
     transition: 2s;
-
+    position: relative;
 } 
-
 .rOscuro {
     background-color: rgb(24, 24, 32);
     color: #0080FF;
@@ -23,7 +22,18 @@
     padding-left: 5px;
     border-top-right-radius: 10px;
     transition: 2s;
+    position: relative;
 }
+
+.left{
+    position: absolute;
+    background-color: red;
+    margin-left: 25em;
+    height: 495px;
+    width: 25em ;
+    padding: 20px;
+    display: flexbox;
+ }
 
 
 
@@ -281,7 +291,7 @@
 ********************************************
 ****************************************** */
 
-.images{
+/* .images{
     background-color:rgb(158, 244, 238);
     height: 440px;
 
@@ -292,12 +302,32 @@
 
 
 .image{
-    /* background-image: url(); */
-    /* width: 350px;
-    height: 550px; */
     margin-top: 5px;
     opacity: .9;
     display: flexbox;
     padding-top: 190px;
-}
+} */
 
+
+
+
+/* responsive*/
+
+
+@media(max-width:600px){
+    .rClaro{
+        position: absolute;
+    }
+
+    .rOscuro{
+        position: absolute;
+    }
+
+    .left{
+        margin-left: 0%;
+         margin-top: 500px; 
+        width: 200%;
+        padding: 50px;
+        position: absolute    ;
+    }
+}
