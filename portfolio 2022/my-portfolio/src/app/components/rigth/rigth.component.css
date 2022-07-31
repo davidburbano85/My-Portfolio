@@ -27,12 +27,13 @@
 
 .left{
     position: absolute;
-    background-color: red;
+    /* background-color: rgb(14, 82, 114);     */
     margin-left: 25em;
     height: 495px;
     width: 25em ;
     padding: 20px;
     display: flexbox;
+    opacity: 0.8;
  }
 
 
@@ -213,7 +214,7 @@
     padding-top: 0px;
     background-color: black;
     box-sizing: border-box;
-    border-bottom: solid 1px  rgb(158, 244, 238);
+    border-bottom: solid 1px  #0080FF;
 
 }
 
@@ -223,7 +224,7 @@
     padding: 0 20px px;
     background-color: rgb(24, 24, 32);
     box-sizing: border-box;
-    border-bottom: solid 2px rgb(158, 244, 238);
+    border-bottom: solid 2px #0080FF;
     transition: 1s;
 }
 

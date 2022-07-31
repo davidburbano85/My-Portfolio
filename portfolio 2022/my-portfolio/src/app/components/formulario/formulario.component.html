@@ -3,32 +3,121 @@
                ********REVISAR Y ACTUALIZAR EL app.module.ts**** -->
 
 
-<div class="form">
 
-     <div *ngIf="!agradecimiento" class="msjValidar">
-          <h1 class="thanks">I David Burbano and I thank you {{formLogin.value.nombre}} for singing me.</h1>
+<div class="bodyForm">
+     <div *ngIf="!oscuro">
+          <div *ngIf="!agradecimiento" class="msjValidar">
+               <h1 class="thanks">Hello, I David Burbano, and I thank you {{formLogin.value.nombre}} for singing me.
+               </h1>
+               <button type="menu" class="btnFinAlerta" (click)="gracias()">
+                    accept
+               </button>
+          </div>
+     </div>
+
+
+     <div class="form" *ngIf="!oscuro">
+
+
+          <form [formGroup]="formLogin" (submit)="send()" errorTailor>
+               <div>
+                    <label for="text">Names: </label>
+                    <input type="text" id="nombre" formControlName="nombre">
+               </div>
+
+               <div>
+                    <label for="text">Surnames: </label>
+                    <input type="text" id="Apellidos" formControlName="apellido">
+               </div>
+
+               <div>
+                    <label for="text">Organization: </label>
+                    <input type="text" id="organizacion" formControlName="organizacion">
+               </div>
+
+
+               <div>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" formControlName="email">
+               </div>
+
+               <div>
+                    <label for="password">Password:</label>
+                    <input type="pasword" id="password" formControlName="password" [controlErrorsTpl]="msgpasserror">
+                    <!-- este es el # del template -->
+               </div>
+
+               <div class="">
+                    <label for="">Know Terms and Conditions <span> <a href="">Here</a></span></label> <br>
+                    <label for="" class="box">Accept T & C <input class="box" type="checkbox" name="" id="check"
+                              formControlName="check"></label>
+               </div>
+
+               <div>
+                    <button [disabled]="formLogin.invalid" id="btn" class="submit" (click)="gracias()"> send
+
+                    </button>
+               </div>
+
+
+
+          </form>
+
+     </div>
+
+
+
+<!-- <div>
+     valido: {{formLogin}}
+</div>  -->
+
+
+
+<ng-template let-error let-text="text" #msgpasserror>
+     <b>Error:</b>
+     <div *ngIf="error?.minlength">
+          <i>You do not meet the minimum {{formLogin.value.minLength}} <br> characters,
+               only entered: {{error?.minlength?.actualLength}} characters. </i>
+     </div>
+</ng-template>
+
+
+
+<!-- ********************************ACTIVAR MODO OSCURO***************************************** -->
+<!-- ******************************************************************** -->
+
+<div *ngIf="oscuro">
+     <div *ngIf="!agradecimiento" class="msjValidarD">
+          <h1 class="thanks">Hello, I David Burbano, and I thank you{{formLogin.value.nombre}} for singing me.</h1>
           <button type="menu" class="btnFinAlerta" (click)="gracias()">
-               accept
+               Accept
           </button>
      </div>
+</div>
+
+<div class="formD" *ngIf="oscuro">
+
+     <!-- <div *ngIf="!agradecimiento" class="msjValidarD">
+          <h1 class="thanks">Hello, I David Burbano, and I thank you!!! {{formLogin.value.nombre}} for singing me.</h1>
+          <button type="menu" class="btnFinAlertaD" (click)="gracias()">
+               accept
+          </button>
+     </div> -->
 
      <form [formGroup]="formLogin" (submit)="send()" errorTailor>
           <div>
-                  <label for="text">Nombres: </label>
+               <label for="text">Names: </label>
                <input type="text" id="nombre" formControlName="nombre">
-
           </div>
 
           <div>
-               <label for="text">Apellidos: </label>
+               <label for="text">Surnames: </label>
                <input type="text" id="Apellidos" formControlName="apellido">
-
           </div>
 
           <div>
-               <label for="text">Organizacion: </label>
+               <label for="text">Organization: </label>
                <input type="text" id="organizacion" formControlName="organizacion">
-
           </div>
 
 
@@ -47,12 +136,10 @@
                <label for="">Know Terms and Conditions <span> <a href="">Here</a></span></label> <br>
                <label for="" class="box">Accept T & C <input class="box" type="checkbox" name="" id="check"
                          formControlName="check"></label>
-
-
           </div>
 
           <div>
-               <button [disabled]="formLogin.invalid" id="btn" class="submit" (click)="gracias()"> send
+               <button [disabled]="formLogin.invalid" id="btnD" class="submit" (click)="gracias()"> send
 
                </button>
           </div>
@@ -65,16 +152,19 @@
 
 
 
- <!-- <div>
-     valido: {{formLogin}}
-</div>  -->
+<!-- <div>
+        valido: {{formLogin}}
+     </div>  -->
 
 
 
 <ng-template let-error let-text="text" #msgpasserror>
      <b>Error:</b>
      <div *ngIf="error?.minlength">
-          <i>You do not meet the minimum <br> characters,
+          <i>You do not meet the minimum {{formLogin.value.minLength}} <br> characters,
                only entered: {{error?.minlength?.actualLength}} characters. </i>
      </div>
 </ng-template>
+
+
+</div>

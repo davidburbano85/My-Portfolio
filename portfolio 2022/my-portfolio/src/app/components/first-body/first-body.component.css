@@ -1,10 +1,42 @@
-div{
-    padding-top: 05px;
-    background-color: blue;
-    margin-left: 240px;
+#aa{
+    padding: 10em;
+    background-color: rgb(14, 82, 114);
+    margin-left: 0em;
     margin-top: 500px;
     height: 200px;
-    width: min-content;
-    display: inline-table;
+    width: 80em;
+    /* display: inline-table; */
+    border-radius: 20px;
+}
+/* *******************MODO RESPONSIVE******************* */
+@media(max-width:600px){
+
+    #aa{
+        width: 25em;
+        margin-top: 1040px;
+        margin-left: 10em;
+    }
 }
 
+/* ***************MODO OSCURO********* */
+
+
+#aaD{
+    padding-top: 10em;
+    background-color: red;
+    margin-left: 0em;
+    margin-top: 500px;
+    height: 200px;
+    width: 80em;
+    /* display: inline-table; */
+    border-radius: 20px;
+}
+/* *******************MODO RESPONSIVE******************* */
+@media(max-width:600px){
+
+    #aaD{
+        width: 25em;
+        margin-top: 1040px;
+        margin-left: 10em;
+    }
+}

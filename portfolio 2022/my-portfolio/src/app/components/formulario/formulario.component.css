@@ -1,5 +1,15 @@
-.form{
-    background-color:  rgb(24, 24, 32);
+ .bodyForm{
+    margin-top: 10.5em;
+ }
+ 
+ 
+ 
+ 
+ /* ********************MODO OSCURO********************
+        ************************************************/
+.formD{
+    margin-top: -10em;
+    background-color: rgb(24, 24, 32);
     display: table;
     margin-left: 40%;
     padding: 15px;
@@ -7,11 +17,22 @@
     color: #0080FF;
     border: solid 1px #0080FF;
     box-shadow: 0 0 10  #181d22, 0 0 10 #181d22;
-    position: relative;
+
     width: 300px;
 }
 
-#btn{
+.msjValidarD{
+    background-color: rgb(24, 24, 32) ;
+    margin-left: 0%;
+    width: 260px;
+    height: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    border: solid 1px  ;
+    color: #0080FF;
+}
+
+#btnD{
     margin-top: 50x;
     align-items: center;
     display: flex;   
@@ -30,12 +51,12 @@ label{
     display: block;    
 }
 
-input.ng-invalid.ng-touched{/* estos ng se los encuentra en consola*/
+input.ng-invalid.ng-touchedD{/* estos ng se los encuentra en consola*/
 border: solid 2px red;
 box-shadow: 0 0 10px  #0095ff, 0 0 10px #ff0000,  0 0 40px #0095ff ,0 0 40px #ff0000, 0 0 80px #ff0000;
 
 }
-input.ng-valid{
+input.ng-validD{/* estos ng se los encuentra en consola*/
     border: solid 2px rgb(16, 238, 223);
     box-shadow: 0 0 10px  #0080FF, 0 0 15px  #0080FF;
     opacity: 0.7;
@@ -44,18 +65,9 @@ input.ng-valid{
 
 /*  mensaje de alerta*/
 
-.msjValidar{
-    background-color:#181d22 ;
-    margin-left: 100%;
-    width: 260px;
-    height: 150px;
-    position: absolute;
-    border-radius: 20px;
-    font-size: medium;
-    border: solid 1px  ;
-}
 
-.btnFinAlerta{
+
+.btnFinAlertaD{
     margin-top: 15px;
     align-items: center;
     display: flex;    
@@ -70,7 +82,7 @@ input.ng-valid{
     margin-left: 75%;
 }
 
-:hover.btnFinAlerta{
+:hover.btnFinAlertaD{
     background-color: #0080FF;
     box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
     opacity: .6;
@@ -78,8 +90,97 @@ input.ng-valid{
     transition: 0.5s;
     border: 1px solid rgb(16, 238, 223);
 }
-.thanks{
+.thanksD{
     font-size: larger;
     padding: 15px;
 }
+    /****************************MODO CLARO*************************/
+        /*******************************************************/
 
+        .form{
+            margin-top: -10em;
+            background-color: rgb(16, 238, 223);
+            display: table;
+            margin-left: 40%;
+            padding: 15px;
+            border-radius: 5px;
+            color: #0080FF;
+            border: solid 1px #0080FF;
+            box-shadow: 0 0 10  #181d22, 0 0 10 #181d22;
+        
+            width: 300px;
+        }
+
+           
+        /*  mensaje de alerta*/
+        
+        .msjValidar{
+            background-color:rgb(16, 238, 223);;
+            margin-left: 0%;
+            width: 260px;
+            height: 150px;
+            border-radius: 20px;
+            font-size: medium;
+            border: solid 1px  ;
+            color: #0080FF;
+        }
+        
+        #btn{
+            margin-top: 50x;
+            align-items: center;
+            display: flex;   
+            border: 1px;    
+            height: 18px;
+            padding: 1px; 
+            font-size: 15px;
+            color: #0080FF;
+            border-radius: 2px;
+            width: 36px;  
+        }
+        
+        
+        
+        label{
+            display: block;    
+        }
+        
+        input.ng-invalid.ng-touched{/* estos ng se los encuentra en consola*/
+        border: solid 2px red;
+        box-shadow: 0 0 10px  #0095ff, 0 0 10px #ff0000,  0 0 40px #0095ff ,0 0 40px #ff0000, 0 0 80px #ff0000;
+        
+        }
+        input.ng-valid{/* estos ng se los encuentra en consola*/
+            border: solid 2px rgb(16, 238, 223);
+            box-shadow: 0 0 10px  #0080FF, 0 0 15px  #0080FF;
+            opacity: 0.7;
+        }
+        
+     
+        
+        .btnFinAlerta{
+            margin-top: 15px;
+            align-items: center;
+            display: flex;    
+            border:  1px solid #0080FF;
+            height: 18px;
+            background-color: #181d22; 
+            padding-left: 1px; 
+            font-size: 15px;
+            border-radius: 5px;
+            color: #0080FF;
+            width: 50px; 
+            margin-left: 75%;
+        }
+        
+        :hover.btnFinAlerta{
+            background-color: #0080FF;
+            box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+            opacity: .6;
+            color: rgb(16, 238, 223);
+            transition: 0.5s;
+            border: 1px solid rgb(16, 238, 223);
+        }
+        .thanks{
+            font-size: larger;
+            padding: 15px;
+        }

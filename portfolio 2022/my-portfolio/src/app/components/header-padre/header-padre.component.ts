@@ -28,7 +28,7 @@ oscuro: boolean=false;
     // }
     this.oscuro=!this.oscuro
     this.cambioColor();
-    console.log(this.oscuro);
+    // console.log(this.oscuro);
 
   }
 }

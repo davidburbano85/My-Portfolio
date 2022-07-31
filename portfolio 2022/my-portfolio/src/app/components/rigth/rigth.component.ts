@@ -17,10 +17,9 @@ export class RigthComponent implements OnInit {
 
   ngOnInit(): void {
     this.servicioOscuroService.enviarColoresObservable.subscribe(color =>{
-      this.oscuro=color;    
-
-      
+      this.oscuro=color;       
     })
+    
   }
   
   contraer(){

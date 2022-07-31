@@ -1,5 +1,14 @@
-<div>
-<div id="aa">
-<p >esta parte necesito verle el background</p>
+<div *ngIf="oscuro" class="aa">
+    <div id="aaD">
+        <p>***************INFORMACION PERSONAL*********</p>
+    </div>
 </div>
+
+
+<!-- ************************MODO OSCURO************* -->
+
+<div *ngIf="!oscuro" class="aa">
+    <div id="aaD">
+        <p>***************INFORMACION PERSONAL*********</p>
+    </div>
 </div>
