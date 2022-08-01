@@ -10,6 +10,7 @@ import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service
 export class FormularioComponent implements OnInit {
   oscuro: boolean=false;//MODO OSCURO
 
+  
 /******FORMULARIO*****/
   title="newForm";
   formLogin!: FormGroup; 

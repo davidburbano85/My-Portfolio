@@ -23,7 +23,7 @@
 
 .msjValidarD{
     background-color: rgb(24, 24, 32) ;
-    margin-left: 0%;
+    margin-left: 4%;
     width: 260px;
     height: 150px;
     border-radius: 20px;
@@ -94,6 +94,35 @@ input.ng-validD{/* estos ng se los encuentra en consola*/
     font-size: larger;
     padding: 15px;
 }
+
+@media(max-width:600px){
+    
+    .msjValidar{
+        background-color: rgb(24, 24, 32);
+        margin-left: 0%;
+        width: 260px;
+        height: 150px;
+        border-radius: 20px;
+        font-size: medium;
+        border: solid 1px  ;
+        color: #0080FF;
+    }
+    
+    .form{
+        margin-top: 0em;
+        background-color:  rgb(24, 24, 32);
+        display: table;         
+        margin-left: 40%;
+        padding: 15px;
+        border-radius: 5px;
+        color: #0080FF;
+        border: solid 1px #0080FF;
+        box-shadow: 0 0 10  #181d22, 0 0 10 #181d22;
+        width: 300px;
+    }
+}
+
+
     /****************************MODO CLARO*************************/
         /*******************************************************/
 
@@ -116,7 +145,7 @@ input.ng-validD{/* estos ng se los encuentra en consola*/
         
         .msjValidar{
             background-color:rgb(16, 238, 223);;
-            margin-left: 0%;
+            margin-left: 4%;
             width: 260px;
             height: 150px;
             border-radius: 20px;
@@ -184,3 +213,35 @@ input.ng-validD{/* estos ng se los encuentra en consola*/
             font-size: larger;
             padding: 15px;
         }
+
+
+
+        /***************RESPONSIVE******************/
+
+
+    @media(max-width:600px){
+    
+            .msjValidar{
+            background-color:rgb(16, 238, 223);
+            margin-left: 0%;
+            width: 260px;
+            height: 150px;
+            border-radius: 20px;
+            font-size: medium;
+            border: solid 1px  ;
+            color: #0080FF;
+        }
+        
+        .form{
+            margin-top: 0em;
+            background-color: rgb(16, 238, 223);
+            display: table;         
+            margin-left: 40%;
+            padding: 15px;
+            border-radius: 5px;
+            color: #0080FF;
+            border: solid 1px #0080FF;
+            box-shadow: 0 0 10  #181d22, 0 0 10 #181d22;
+            width: 300px;
+        }
+    }
