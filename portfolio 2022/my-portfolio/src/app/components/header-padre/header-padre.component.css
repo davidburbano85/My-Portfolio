@@ -32,7 +32,7 @@
         
     margin-top: 0px;
     display: flex;   
-    width: max-content;
+    width: 90px;
     align-items: center;
     height: min-content;
     padding: 4px;
@@ -61,7 +61,7 @@
     font-size: 15px;
     color: #0080FF;
     border-radius: 2px;
-    width: 36px;  
+    width: 40px;  
 }
 
 :hover.btn1{
@@ -75,11 +75,12 @@
     border: 1px;
     height: 18px;
     background-color: rgb(24, 24, 32); 
-    padding-left: 1px; 
+    padding-left: 2px; 
+    padding-right: 2px;
     font-size: 15px;
     border-radius: 2px;
     color: #0080FF;
-    width: 36px; 
+    width: max-content; 
 }
 
 :hover.btns {

@@ -13,6 +13,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { HojaDeVidaComponent } from './components/hoja-de-vida/hoja-de-vida.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { HojaDeVidaComponent } from './components/hoja-de-vida/hoja-de-vida.comp
           invalidAddress: error => `Address isn't valid`
         }
       }
-    })
+    }),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
    ],
   
   providers: [],

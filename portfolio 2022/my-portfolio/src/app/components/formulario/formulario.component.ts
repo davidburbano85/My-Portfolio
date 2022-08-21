@@ -1,3 +1,4 @@
+import { UserInterfaceService } from './../../inteface/user-interface.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup,  MinLengthValidator,  Validators } from '@angular/forms';
 import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service';
@@ -18,7 +19,8 @@ export class FormularioComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder, //revisar que en app.module.ts este activo en el imports el ReactiveFormsModuleo escribirlo
-    private servicioOscuroService: ServicioOscuroService) {
+    private user: UserInterfaceService,
+    private servicioOscuroService: ServicioOscuroService) {//modo oscuro
 
    }
    /*****************FORMULARIO********************** */
@@ -36,8 +38,13 @@ export class FormularioComponent implements OnInit {
         this.oscuro=color;       
       });
   }
-  send():any{
+//  async onSubmit(){
+//       
+//         console.log(response);
+//   }
+  async send(){
     console.log(MinLengthValidator);
+    const response= await this.servicioOscuroService.addUser(this.formLogin.value);
     
   }
   gracias(){
