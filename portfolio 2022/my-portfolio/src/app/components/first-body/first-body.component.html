@@ -1,14 +1,93 @@
-<div *ngIf="oscuro" class="aa">
-    <div id="aaD">
-        <p>***************PERSONAL INFORMATION*********</p>
+<div *ngIf="!oscuro" class="me">
+    <div id="aa">
+        <div class="descriptionMe"> 
+            <h1 class="letter"> <label for="" style=" font-size: 22px; color: bold;"> Describing myself </label>
+                <br> I am a front end developer, designer and integrator of mechatronics automatisms, operator of
+                heavy machinery, operator, programmer and constructor of CNC machinery and many more tasks,
+                which makes me a very versatile person capable of learning and undertaking different
+                Projects. Currently I am dedicated to front end  
+               
+               
+                <span *ngIf="ocultar">  development which since I started studying it
+                it became my passion. Focusing my work on angular cli I have developed several projects
+                for companies and foundations such as TramarT Li Satoru and TramarT CNC. <br> I find myself investigating
+                about the back end, which is where many questions arise that for now I have not been able to solve,
+                However, I hope to learn it soon with the help of the teams that one finds daily.
+                and with whom you can work and do great projects.</span> <br>
+                <button class="moreInfo" *ngIf="!ocultar" (click)="show()"> More info....</button>
+                <button class="moreInfo" *ngIf="ocultar" (click)="show()"> Min info....</button> 
+            </h1>
+        </div>
+
+        <div>
+            <h1 class="letter">
+                <label for="" style=" font-size: 22px; color: bold;"> Describing myself </label> 
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consectetur pariatur numquam 
+                <span *ngIf="ocultar1">magnam et nihil adipisci ex quod repudiandae? Laborum id neque ratione, optio sit nobis ut omnis ipsa voluptas!</span> <br>
+                <button class="moreInfo" *ngIf="!ocultar1" (click)="show1()"> More info....</button>
+                <button class="moreInfo" *ngIf="ocultar1" (click)="show1()"> Min info....</button>
+            </h1>
+        </div>       
+        
+        <div>
+            <h1 class="letter">
+                <label for="" style=" font-size: 22px; color: bold;"> Describing myself </label> 
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consectetur pariatur numquam 
+                <span *ngIf="ocultar2">magnam et nihil adipisci ex quod repudiandae? Laborum id neque ratione, optio sit nobis ut omnis ipsa voluptas!</span> <br>
+                <button class="moreInfo" *ngIf="!ocultar2" (click)="show2()"> More info....</button>
+                <button class="moreInfo" *ngIf="ocultar2" (click)="show2()"> Min info....</button>
+            </h1>
+        </div>   
+       
+
     </div>
 </div>
 
 
 <!-- ************************MODO OSCURO************* -->
 
-<div *ngIf="!oscuro" class="aa">
+    
+<div *ngIf="oscuro" class="me">
     <div id="aaD">
-        <p>*************** PERSONAL INFORMATION *********</p>
+        <div class="descriptionMe"> 
+            <h1 class="letterD"> <label for="" style=" font-size: 22px; color: bold;"> Describing myself </label>
+                <br> I am a front end developer, designer and integrator of mechatronics automatisms, operator of
+                heavy machinery, operator, programmer and constructor of CNC machinery and many more tasks,
+                which makes me a very versatile person capable of learning and undertaking different
+                Projects. Currently I am dedicated to front end  
+               
+               
+                <span *ngIf="ocultar">  development which since I started studying it
+                it became my passion. Focusing my work on angular cli I have developed several projects
+                for companies and foundations such as TramarT Li Satoru and TramarT CNC. <br> I find myself investigating
+                about the back end, which is where many questions arise that for now I have not been able to solve,
+                However, I hope to learn it soon with the help of the teams that one finds daily.
+                and with whom you can work and do great projects.</span> <br>
+                <button class="moreInfoD" *ngIf="!ocultar" (click)="show()"> More info....</button>
+                <button class="moreInfoD" *ngIf="ocultar" (click)="show()"> Min info....</button> 
+            </h1>
+        </div>
+
+        <div>
+            <h1 class="letterD">
+                <label for="" style=" font-size: 22px; color: bold;"> Describing myself </label> 
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consectetur pariatur numquam 
+                <span *ngIf="ocultar1">magnam et nihil adipisci ex quod repudiandae? Laborum id neque ratione, optio sit nobis ut omnis ipsa voluptas!</span> <br>
+                <button class="moreInfoD" *ngIf="!ocultar1" (click)="show1()"> More info....</button>
+                <button class="moreInfoD" *ngIf="ocultar1" (click)="show1()"> Min info....</button>
+            </h1>
+        </div>       
+        
+        <div>
+            <h1 class="letterD">
+                <label for="" style=" font-size: 22px; color: bold;"> Describing myself </label> 
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consectetur pariatur numquam 
+                <span *ngIf="ocultar2">magnam et nihil adipisci ex quod repudiandae? Laborum id neque ratione, optio sit nobis ut omnis ipsa voluptas!</span> <br>
+                <button class="moreInfoD" *ngIf="!ocultar2" (click)="show2()"> More info....</button>
+                <button class="moreInfoD" *ngIf="ocultar2" (click)="show2()"> Min info....</button>
+            </h1>
+        </div>   
+       
+
     </div>
 </div>

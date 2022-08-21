@@ -1,0 +1,46 @@
+/* *******************MODO CLARO******************* */
+
+
+.pdf{
+        
+        background-color: none;
+        margin-left: 0em;
+        height: min-content;
+        width: 120em;
+        border-radius: 20px;
+        justify-content: center;
+}
+.textPdf{
+    /* display: flex; */
+    background-color:rgb(158, 244, 238);
+    width: 20em;
+    padding: 0.5em;
+    border-radius: 5px;
+    /* margin: 55px; */
+    font-size: 14px;
+    margin-left: 25%;
+    color: #0080FF;
+}
+
+/* *******************MODO OSCURO******************* */
+
+.pdfD{
+        
+    background-color: none;
+    margin-left: 0em;
+    height: min-content;
+    width: 120em;
+    border-radius: 20px;
+    justify-content: center;
+}
+.textPdfD{
+/* display: flex; */
+background-color:rgb(24, 24, 32);
+width: 20em;
+padding: 0.5em;
+border-radius: 5px;
+/* margin: 55px; */
+font-size: 14px;
+margin-left: 25%;
+color: #0080FF;
+}

@@ -14,6 +14,7 @@ oscuro: boolean=false;
   ngOnInit(): void {
    
   }
+  
   cambioColor(){
     this.servicioOscuroService.enviarColores(this.oscuro)//se puede usar sola si no se va a necesitar mas e irira en la linea 30
   }

@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,6 +12,7 @@ import { FirstBodyComponent } from './components/first-body/first-body.component
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ErrorTailorModule } from '@ngneat/error-tailor';
+import { HojaDeVidaComponent } from './components/hoja-de-vida/hoja-de-vida.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { ErrorTailorModule } from '@ngneat/error-tailor';
     ColorOscuroDirective,
     ValidarFormularioPipe,
     FormularioComponent,
-    FirstBodyComponent
+    FirstBodyComponent,
+    HojaDeVidaComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     ErrorTailorModule.forRoot({
       errors: {

@@ -8,6 +8,9 @@ import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service
 })
 export class FirstBodyComponent implements OnInit {
 oscuro:boolean= false;
+ocultar: boolean= false;
+ocultar1: boolean= false;
+ocultar2: boolean= false;
   constructor(private servicioOscuroService: ServicioOscuroService) { }
 
   ngOnInit(): void {
@@ -16,5 +19,24 @@ oscuro:boolean= false;
     })
 
   }
+
+  /******* FUNCION MODO OSCURO**********/
+  estilo(){
+        this.oscuro=!this.oscuro
+  }
+
+
+show(){
+  this.ocultar=!this.ocultar
+}
+
+show1(){
+  this.ocultar1=!this.ocultar1
+}
+
+show2(){
+  this.ocultar2=!this.ocultar2
+}
+
 
 }
