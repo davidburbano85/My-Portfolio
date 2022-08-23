@@ -1,14 +1,13 @@
 import { UserInterfaceService } from './../inteface/user-interface.service';
-import { Injectable } from '@angular/core';
-import { Firestore, collection, addDoc } from '@angular/fire/firestore';
-import { Subject } from 'rxjs';
+import { EventEmitter, Injectable, Input, Output } from '@angular/core';
+import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicioOscuroService {
-  
- 
+  @Output() disparadoDeUsuario: EventEmitter<any> = new EventEmitter();
   
   oscuro: boolean= false;
   
@@ -19,13 +18,21 @@ export class ServicioOscuroService {
     this.oscuro=color;
     this.enviarColoresSubjet.next(color)
   
+  
   }
   
-  constructor(private firestore: Firestore) { }
+  // *************firebase crud*****************
+  constructor(private firestore: Firestore ) { }
     
   addUser(user:UserInterfaceService){
     const userRef= collection(this.firestore, "users");
     return addDoc (userRef, user);
   }
+
+  getUser(): Observable<UserInterfaceService[]>{
+    const userRef= collection(this.firestore, "users");
+    return collectionData(userRef, { idField: 'id'}) as Observable<UserInterfaceService[]>
+  }
+  
   
 }

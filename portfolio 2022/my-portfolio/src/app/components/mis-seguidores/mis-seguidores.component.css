@@ -1,0 +1,8 @@
+.divPrincipal{
+    display: flex;
+    background-color: rgb(24, 24, 32);
+    color: #0080FF;
+    margin-top: 10px;
+    border-width: 0.5px solid  #0080FF;
+    height: max-content;
+}

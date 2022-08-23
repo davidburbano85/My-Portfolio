@@ -1,3 +1,11 @@
+.user{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+} 
+ 
+ 
+ 
  .bodyForm{
     margin-top: 10.5em;
  }
@@ -17,7 +25,7 @@
     color: #0080FF;
     border: solid 1px #0080FF;
     box-shadow: 0 0 10  #181d22, 0 0 10 #181d22;
-
+    box-shadow: 0 0 5px rgb(24, 24, 32), 0 0 15px rgb(24, 24, 32) ;
     width: 300px;
 }
 
@@ -30,6 +38,7 @@
     font-size: medium;
     border: solid 1px  ;
     color: #0080FF;
+    box-shadow: 0 0 5px rgb(24, 24, 32), 0 0 15px rgb(24, 24, 32) ;
 }
 
 #btnD{
@@ -43,6 +52,7 @@
     color: #0080FF;
     border-radius: 2px;
     width: 36px;  
+    box-shadow: 0 0 5px rgb(24, 24, 32), 0 0 15px rgb(24, 24, 32) ;
 }
 
 
@@ -80,6 +90,7 @@ input.ng-validD{/* estos ng se los encuentra en consola*/
     color: #0080FF;
     width: 50px; 
     margin-left: 75%;
+   
 }
 
 :hover.btnFinAlertaD{
@@ -128,7 +139,7 @@ input.ng-validD{/* estos ng se los encuentra en consola*/
 
         .form{
             margin-top: -10em;
-            background-color: rgb(16, 238, 223);
+            background-color: rgb(158, 244, 238);
             display: table;
             margin-left: 35%;
             padding: 15px;

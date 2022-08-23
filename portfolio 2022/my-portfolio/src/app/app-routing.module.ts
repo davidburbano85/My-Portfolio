@@ -1,3 +1,4 @@
+import { YourProfileComponent } from './components/your-profile/your-profile.component';
 import { HeaderPadreComponent } from './components/header-padre/header-padre.component';
 import { HojaDeVidaComponent } from './components/hoja-de-vida/hoja-de-vida.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
@@ -8,11 +9,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
- 
+{
+  path:'yourProfile',
+  component:YourProfileComponent
+},
+
 {
   path:'firstBody',
   component: FirstBodyComponent
 },
+
 {
   path:'formulario',
   component:FormularioComponent

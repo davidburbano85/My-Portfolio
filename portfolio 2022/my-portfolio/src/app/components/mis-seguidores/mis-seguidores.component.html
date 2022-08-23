@@ -1,0 +1,22 @@
+<div class="divPrincipal"><h1>My loyal followers</h1><br></div>
+    
+    <div *ngFor="let usuario of users">
+        <!-- <h3>Id {{usuario.id}}</h3> -->
+        <table border="1px solid green">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Subname</th>
+                <th >Email</th>
+                <th>Organization</th>
+            </tr>
+            
+            <tr>
+                <td> {{usuario.id}}</td>
+                <td>{{usuario.nombre}}</td>
+                <td>{{usuario.apellido}}</td>
+                <td>{{usuario.email}}</td>
+                <td>{{usuario.organizacion}}</td>
+            </tr> <br>
+        </table>
+    </div>

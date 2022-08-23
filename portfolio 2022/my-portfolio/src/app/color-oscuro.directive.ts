@@ -4,7 +4,5 @@ import { Directive, HostListener } from '@angular/core';
   selector: '[appColorOscuro]'
 })
 export class ColorOscuroDirective {
-// @HostListener("click", ['$event. header'])
-//   constructor() { }
 
 }

@@ -16,6 +16,8 @@ import { HojaDeVidaComponent } from './components/hoja-de-vida/hoja-de-vida.comp
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { YourProfileComponent } from './components/your-profile/your-profile.component';
+import { MisSeguidoresComponent } from './components/mis-seguidores/mis-seguidores.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     ValidarFormularioPipe,
     FormularioComponent,
     FirstBodyComponent,
-    HojaDeVidaComponent
+    HojaDeVidaComponent,
+    YourProfileComponent,
+    MisSeguidoresComponent
   ],
   imports: [
     BrowserModule,

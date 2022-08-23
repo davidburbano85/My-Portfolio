@@ -13,7 +13,6 @@ export class RigthComponent implements OnInit {
 
   recoger: boolean=false;
   oscuro: boolean=false;
-  // cambioColor: any;
   constructor(private servicioOscuroService: ServicioOscuroService, private router: Router) { }
   
 
@@ -23,7 +22,7 @@ export class RigthComponent implements OnInit {
     })
   }
  
-  
+ 
 
   
   firstBody(){
@@ -44,6 +43,8 @@ export class RigthComponent implements OnInit {
   hojadeVida(){
       this.router.navigate(["hojaDeVida"])
   }
+
+
   cambioColor(){
     this.servicioOscuroService.enviarColores(this.oscuro)//se puede usar sola si no se va a necesitar mas e irira en la linea 30
   }

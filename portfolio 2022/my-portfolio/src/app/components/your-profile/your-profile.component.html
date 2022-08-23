@@ -1,0 +1,42 @@
+<div class="listaUsuario" *ngIf="!oscuro"> 
+    <div><span class="ocultarInfo">
+       If you want to show or hide your data after registering click here  </span> <br>
+        <button (click)="oculto()" class="btn1">button</button>
+        <div *ngIf="!ocultar">
+            <div *ngFor="let usuario of datosUsuarios" class="letras">
+                <h3>Name {{usuario.user.value.nombre}}</h3>
+                <h3>Subname {{usuario.user.value.apellido}}</h3>
+                <h3>Id{{usuario.user.value.id}}</h3>
+                <h3>Organization{{usuario.user.value.organizacion}}</h3>
+                <h3>Pass {{usuario.user.value.password}}</h3>
+                <h3>Email {{usuario.user.value.email}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="btns1 "><span class="textClick">Click here to </span>
+        <a href="header-padre.component.html" class="btn1 position">  Finish</a>
+      </div>
+</div>
+
+<!-- ************************modo oscuro****************************** -->
+
+
+<div class="listaUsuarioD" *ngIf="oscuro"> 
+    <div><span class="ocultarInfoD">
+       If you want to show or hide your data after registering click here  </span> <br>
+        <button (click)="oculto()" class="btn1D">button</button>
+        <div *ngIf="!ocultar">
+            <div *ngFor="let usuario of datosUsuarios" class="letrasD">
+                <h3>Name {{usuario.user.nombre}}</h3>
+                <h3>Subname {{usuario.user.apellido}}</h3>
+                <h3>Id{{usuario.user.id}}</h3>
+                <h3>Organization{{usuario.user.organizacion}}</h3>
+                <h3>Pass {{usuario.user.password}}</h3>
+                <h3 >Email {{usuario.user.email}}</h3 >
+            </div>
+        </div>
+    </div>
+    <div class="btns1D "><span class="textClickD">Click here to </span>
+        <a href="header-padre.component.html" class="btn1D positionD">  Finish</a>
+      </div>
+</div>

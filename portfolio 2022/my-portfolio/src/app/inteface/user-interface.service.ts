@@ -1,20 +1,15 @@
-import { EventEmitter, Injectable, Output } from '@angular/core';
+import { ServicioOscuroService } from 'src/app/servicios/servicio-oscuro.service';
+import { EventEmitter, Injectable, Input, Output } from '@angular/core';
+
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 
 export class UserInterfaceService {
-@Output() disparadorDeUsuarios: EventEmitter<any>= new EventEmitter
-
-  id?: string;
-  email: string="";
-  password: string="";
-  nombre: string="";
-  apellido: string="";
-  organizacion: string="";
+  @Output() disparadoDeUsuarios: EventEmitter<any> = new EventEmitter();
   
 
 
-  constructor() { }
+  constructor(private servicioOscuroService: ServicioOscuroService) { }
 }

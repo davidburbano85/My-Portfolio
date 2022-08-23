@@ -1,0 +1,120 @@
+.listaUsuario{
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: rgb(158, 244, 238);
+    height: min-content;
+    width: max-content;
+    color: #0080FF;
+    border-radius: 20px;
+    font-size: 5px;
+    padding: 15px;
+    font-size: 13px;
+    box-shadow: 0 0 5px rgb(24, 24, 32), 0 0 15px rgb(24, 24, 32) ;
+    border:  0.5px solid #0080FF;
+    
+}
+.letras{
+    font-size: 5px;
+}
+
+.ocultarInfo{
+    margin-top: 15px;
+    color: #0080FF;
+}
+
+.btn1 {
+    vertical-align: middle;
+    margin-top: 2px;
+    border: 1px;
+    height: 18px;
+    background-color: rgb(24, 24, 32);
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #0080FF;
+    width: max-content;
+    transition: 2s;
+    align-items: center center;
+}
+:hover.btn1 {
+    background: rgb(158, 244, 238);
+    color: rgb(24, 24, 32);
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
+}
+.btns{
+    /* align-items: baseline; */
+    justify-content: baseline;
+}
+.position{
+    margin-top: 300px;
+}
+
+.textClick{
+margin-top: 20em;
+padding: 2px;
+}
+
+
+
+/* **********************modo oscuro*********** */
+
+.listaUsuarioD{
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: rgb(24, 24, 32);
+    height: min-content;
+    width: max-content;
+    color: #0080FF;
+    border-radius: 20px;
+    font-size: 5px;
+    padding: 15px;
+    font-size: 13px;
+    box-shadow: 0 0 5px rgb(24, 24, 32), 0 0 15px rgb(24, 24, 32) ;
+    border:  0.5px solid #0080FF;
+    
+}
+.letrasD{
+    font-size: 5px;
+}
+
+.ocultarInfoD{
+    margin-top: 15px;
+    color: #0080FF;
+}
+
+.btn1D {
+    vertical-align: middle;
+    margin-top: 2px;
+    border: 1px;
+    height: 18px;
+    background-color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #0080FF;
+    width: max-content;
+    transition: 2s;
+    align-items: center center;
+}
+:hover.btn1D {
+    background: rgb(158, 244, 238);
+    color: rgb(24, 24, 32);
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
+}
+.btnsD{
+    /* align-items: baseline; */
+    justify-content: baseline;
+}
+.positionD{
+    margin-top: 300px;
+}
+
+.textClickD{
+margin-top: 20em;
+padding: 2px;
+}
+

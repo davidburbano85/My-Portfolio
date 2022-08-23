@@ -12,6 +12,7 @@
                <button type="menu" class="btnFinAlerta" (click)="gracias()">
                     accept
                </button>
+
           </div>
      </div>
 
@@ -21,13 +22,18 @@
 
           <form [formGroup]="formLogin" (submit)="send()" errorTailor>
                <div>
+                    <label for="text" >Id: </label>
+                    <input type="number" id="id" formControlName="id" placeholder="your identification number">
+               </div>
+
+               <div>
                     <label for="text">Names: </label>
                     <input type="text" id="nombre" formControlName="nombre">
                </div>
 
                <div>
                     <label for="text">Surnames: </label>
-                    <input type="text" id="Apellidos" formControlName="apellido">
+                    <input type="text" id="apellidos" formControlName="apellido">
                </div>
 
                <div>
@@ -43,7 +49,7 @@
 
                <div>
                     <label for="password">Password:</label>
-                    <input type="pasword" id="password" formControlName="password" [controlErrorsTpl]="msgpasserror">
+                    <input type="password" id="password" formControlName="password" [controlErrorsTpl]="msgpasserror">
                     <!-- este es el # del template -->
                </div>
 
@@ -57,6 +63,8 @@
                     <button [disabled]="formLogin.invalid" id="btn" class="submit" (click)="gracias()"> send
 
                     </button>
+
+            
                </div>
 
 
@@ -66,13 +74,6 @@
      </div>
 
 
-
-<!-- <div>
-     valido: {{formLogin}}
-</div>  -->
-
-
-
 <ng-template let-error let-text="text" #msgpasserror>
      <b>Error:</b>
      <div *ngIf="error?.minlength">
@@ -80,6 +81,20 @@
                only entered: {{error?.minlength?.actualLength}} characters. </i>
      </div>
 </ng-template>
+
+
+<!-- 
+     *******************ensayo de *ngfor sin service************** 
+<div  class="user" >
+     <div >id {{formLogin.value.id}} <br>
+     <span>email {{formLogin.value.email}}</span> <br>
+      <span type="password">password {{formLogin.value.password}}</span> <br>
+     <span>nombre {{formLogin.value.nombre}}</span><br>
+     <span>apellido {{formLogin.value.apellido}}</span> <br>
+     <span>organizacion {{formLogin.value.organizacion}}</span> <br>
+     </div>
+</div> -->
+
 
 
 
@@ -97,14 +112,13 @@
 
 <div class="formD" *ngIf="oscuro">
 
-     <!-- <div *ngIf="!agradecimiento" class="msjValidarD">
-          <h1 class="thanks">Hello, I David Burbano, and I thank you!!! {{formLogin.value.nombre}} for singing me.</h1>
-          <button type="menu" class="btnFinAlertaD" (click)="gracias()">
-               accept
-          </button>
-     </div> -->
 
      <form [formGroup]="formLogin" (submit)="send()" errorTailor>
+          <div>
+               <label for="text" >Id: </label>
+               <input type="number" id="id" formControlName="id" placeholder="your identification number">
+          </div>
+
           <div>
                <label for="text">Names: </label>
                <input type="text" id="nombre" formControlName="nombre">
@@ -128,7 +142,7 @@
 
           <div>
                <label for="password">Password:</label>
-               <input type="pasword" id="password" formControlName="password" [controlErrorsTpl]="msgpasserror">
+               <input type="password" id="password" formControlName="password" [controlErrorsTpl]="msgpasserror">
                <!-- este es el # del template -->
           </div>
 
