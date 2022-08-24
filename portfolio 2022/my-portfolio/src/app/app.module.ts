@@ -18,6 +18,10 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { YourProfileComponent } from './components/your-profile/your-profile.component';
 import { MisSeguidoresComponent } from './components/mis-seguidores/mis-seguidores.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+// import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -30,9 +34,11 @@ import { MisSeguidoresComponent } from './components/mis-seguidores/mis-seguidor
     FirstBodyComponent,
     HojaDeVidaComponent,
     YourProfileComponent,
-    MisSeguidoresComponent
+    MisSeguidoresComponent,
+    
   ],
   imports: [
+    // MatCardModule,
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
@@ -47,7 +53,8 @@ import { MisSeguidoresComponent } from './components/mis-seguidores/mis-seguidor
       }
     }),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    BrowserAnimationsModule
    ],
   
   providers: [],

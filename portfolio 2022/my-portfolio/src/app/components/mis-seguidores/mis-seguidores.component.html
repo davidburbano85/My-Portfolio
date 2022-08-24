@@ -1,22 +1,29 @@
-<div class="divPrincipal"><h1>My loyal followers</h1><br></div>
+<div class="divPrincipal"><h1 class="title">My loyal followers</h1><br>
     
-    <div *ngFor="let usuario of users">
-        <!-- <h3>Id {{usuario.id}}</h3> -->
-        <table border="1px solid green">
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Subname</th>
-                <th >Email</th>
-                <th>Organization</th>
+    <div *ngFor="let usuario of users" class="tablemayor">
+        
+        <table border="1px solid green" class="table">
+            <tr class="trTitle" >
+                <td class="titleData">Id</td>
+                <td class="titleData">Name</td>
+                <td class="titleData">Subname</td>
+                <td class="titleData">Email</td>
+                <td class="titleData">Organization</td>
+                <td class="titleData">Delete</td>
+                <td class="titleData">Edit</td>
             </tr>
             
-            <tr>
-                <td> {{usuario.id}}</td>
-                <td>{{usuario.nombre}}</td>
-                <td>{{usuario.apellido}}</td>
-                <td>{{usuario.email}}</td>
-                <td>{{usuario.organizacion}}</td>
-            </tr> <br>
+            <tr class="td alinear">
+                <td class="data">{{usuario.id}}</td>
+                <td class="data">{{usuario.nombre}}</td>
+                <td class="data">{{usuario.apellido}}</td>
+                <td class="data">{{usuario.email}}</td>
+                <td class="data">{{usuario.organizacion}}</td>
+                <td><button type="button" class="btn1 eliminar data" (click)="alert()" >eliminar</button></td>
+                <td><button type="button" class="btn1 editar data" (click)="onClickDelete(usuario.id)">edit</button></td>
+                <td></td>
+            </tr> 
         </table>
     </div>
+   
+</div>

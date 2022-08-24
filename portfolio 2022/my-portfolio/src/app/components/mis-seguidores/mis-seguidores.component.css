@@ -1,8 +1,99 @@
-.divPrincipal{
-    display: flex;
+ .divPrincipal{
     background-color: rgb(24, 24, 32);
     color: #0080FF;
     margin-top: 10px;
     border-width: 0.5px solid  #0080FF;
     height: max-content;
+    width: 700px;
+    margin-left: 8%;
+    align-items: center;
+    padding-top: 10px; 
+    border-radius: 10px;
+    text-align: justify;
+} 
+ .title{
+    margin-left: 35%;
+} 
+
+.table{
+    border: none;
+} 
+/* .th{
+    background-color:black;
+    margin: 10px;
+} */
+
+/* .alinear{
+    background-color: black;
+    color: red;
+    margin: 10px;
+} */
+.data{
+    width: 30%;
+    height: max-content;
+    color: #0080FF;
+    text-align: center;
+}
+
+.titleData{
+    color: #0080FF;
+    text-align: center;
+}
+.trTitle{
+    background-color: black;
+}
+
+/* .btn1 {
+    vertical-align: middle;
+    margin-top: 2px;
+    border: 1px;
+    height: 18px;
+    background-color: rgb(24, 24, 32);
+    font-size: 12px;
+    border-radius: 2px;
+    transition: 1s;
+    color: red;
+} */
+/* :hover.btn1 {
+    background: rgb(158, 244, 238);
+    color: rgb(24, 24, 32);
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
+    height: max-content;
+    width: fit-content;
+} */
+
+.eliminar{
+    background-color: red;
+    color: #0080FF;
+    border: solid 1px #0080FF;
+    width: max-content;
+    margin: 4px;
+    border-radius: 5px;
+}
+:hover.eliminar {
+    background: rgb(158, 244, 238);
+    color: rgb(24, 24, 32);
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
+    height: max-content;
+    width: fit-content;
+}
+
+
+.editar{
+    background-color: yellow;
+    color: #0080FF;
+    border: solid 1px #0080FF;
+    width: max-content;
+    margin: 4px;
+    border-radius: 5px;
+}
+:hover.editar {
+    background: rgb(158, 244, 238);
+    color: rgb(24, 24, 32);
+    box-shadow: 0 0 10px #0080FF, 0 0 40px #0080FF, 0 0 80px #0080FF;
+    transition-delay: 0s;
+    height: max-content;
+    width: fit-content;
 }

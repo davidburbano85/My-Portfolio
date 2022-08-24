@@ -1,3 +1,4 @@
+import { MisSeguidoresComponent } from './components/mis-seguidores/mis-seguidores.component';
 import { YourProfileComponent } from './components/your-profile/your-profile.component';
 import { HeaderPadreComponent } from './components/header-padre/header-padre.component';
 import { HojaDeVidaComponent } from './components/hoja-de-vida/hoja-de-vida.component';
@@ -9,6 +10,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
+
+  {
+    path: 'seguidores',
+    component:MisSeguidoresComponent
+  },
 {
   path:'yourProfile',
   component:YourProfileComponent
